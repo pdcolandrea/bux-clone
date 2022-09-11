@@ -23,6 +23,7 @@ export default {
         greyish: "#E9E9E9",
         warmblack: "#3d3935",
         sbpurp: "#B0B0B0",
+        warmpurp: "#00003A",
       },
     },
   },

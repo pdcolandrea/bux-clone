@@ -1,4 +1,5 @@
 import { asset } from "https://deno.land/x/fresh@1.1.0/runtime.ts";
+import FooterItem from "../components/Footer/FooterItem.tsx";
 import Navbar from "../components/Navbar.tsx";
 import SeoHeader from "../components/Seo.tsx";
 import Counter from "../islands/Counter.tsx";
@@ -128,25 +129,57 @@ export default function Home() {
           <footer>
             <div class="shadow-inner mt-8 flex p-6">
               <div>
-                <h1 class="font-semibold text-xl">About Us</h1>
-                <ul class="text-sbpurp font-semibold">Our Company</ul>
-                <ul>Our Coffee</ul>
+                <h1 class="font-semibold text-xl mb-6 text-warmpurp">
+                  About Us
+                </h1>
+                <FooterItem name="Our Company" />
+                <FooterItem name="Our Coffee" />
+                <FooterItem name="Stories and News" />
+                <FooterItem name="Starbucks Archive" />
+                <FooterItem name="Investor Relations" />
+                <FooterItem name="Customer Service" />
               </div>
-              <div>
-                <h1>Careers</h1>
-                <ul>Culture and Values</ul>
+
+              <div class="ml-20">
+                <h1 class="font-semibold text-xl mb-6 text-warmpurp">
+                  Careers
+                </h1>
+                <FooterItem name="Culture and Values" />
+                <FooterItem name="Inclusion, Diversity, and Equity" />
+                <FooterItem name="College Achievement Plan" />
+                <FooterItem name="Alumni Community" />
+                <FooterItem name="U.S. Careers" />
+                <FooterItem name="International Careers" />
               </div>
-              <div>
-                <h1>Social Impact</h1>
-                <ul>Our Company</ul>
+
+              <div class="ml-20">
+                <h1 class="font-semibold text-xl mb-6 text-warmpurp">
+                  Social Impact
+                </h1>
+                <FooterItem name="People" />
+                <FooterItem name="Planet" />
+                <FooterItem name="Enviromental and Social Impact Reporting" />
               </div>
-              <div>
-                <h1>For Business Partners</h1>
-                <ul>Our Company</ul>
+
+              <div class="ml-20">
+                <h1 class="font-semibold text-xl mb-6 text-warmpurp">
+                  For Business Partners
+                </h1>
+                <FooterItem name="Landlord Support Center" />
+                <FooterItem name="Suppliers" />
+                <FooterItem name="Corporate Gift Card Sales" />
+                <FooterItem name="Office and Foodservice Coffee" />
               </div>
-              <div>
-                <h1>Order and Pickup</h1>
-                <ul>Our Company</ul>
+
+              <div class="ml-20">
+                <h1 class="font-semibold text-xl mb-6 text-warmpurp">
+                  Order and Pickup
+                </h1>
+                <FooterItem name="Order on the App" />
+                <FooterItem name="Order on the Web" />
+                <FooterItem name="Delivery" />
+                <FooterItem name="Order and Pickup Options" />
+                <FooterItem name="Explore and Find Coffee for Home" />
               </div>
             </div>
           </footer>
