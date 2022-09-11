@@ -22,7 +22,7 @@ export default function Home() {
         <Navbar />
 
         <div class="w-full 2xl:w-11/12 mx-auto">
-          <div class="grid md:grid-cols-2 grid-cols-1 gap-y-4 ">
+          <div class="grid md:grid-cols-2 grid-cols-1 gap-y-6 ">
             <img src={asset("./bux.jpg")} class="h-full" />
             <div class="bg-sbgreen px-24 py-12 flex items-center w-full justify-center">
               <div class="flex flex-col ">
@@ -63,7 +63,65 @@ export default function Home() {
             </div>
             <img src={asset("./bux2.jpg")} class="h-full" />
 
-            <Counter start={3} />
+            <img src={asset("./bux2.jpg")} class="h-full" />
+            <div class="bg-deepgreen px-24 py-12 flex items-center w-full justify-center h-full">
+              <div class="flex flex-col ">
+                <h1 class="font-bold text-white text-3xl text-center mb-6 font-sodo">
+                  Welcome home, pumpkin
+                </h1>
+                <p class="text-center font-semibold text-white text-lg">
+                  Fall favorites return with the blissful Pumpkin Spice Latte
+                  and smooth Pumpkin Cream Cold Brew.
+                </p>
+
+                <button
+                  href="#"
+                  class="border-solid border-white border-1 px-3 py-1 rounded-2xl mt-6 mx-auto text-lg"
+                >
+                  <span class="font-semibold text-white">Learn more</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="bg-deepgreen px-24 py-12 flex items-center w-full justify-center h-full">
+              <div class="flex flex-col ">
+                <h1 class="font-bold text-white text-3xl text-center mb-6 font-sodo">
+                  Picks of the patch
+                </h1>
+                <p class="text-center font-semibold text-white text-lg">
+                  Choose a comforting classic: Pumpkin Cream Cheese Muffin,
+                  Pumpkin & Pepita Loaf or Pumpkin Scone.
+                </p>
+
+                <button
+                  href="#"
+                  class="border-solid border-white border-1 px-3 py-1 rounded-2xl mt-6 mx-auto text-lg"
+                >
+                  <span class="font-semibold text-white">Learn more</span>
+                </button>
+              </div>
+            </div>
+            <img src={asset("./bux2.jpg")} class="h-full" />
+
+            <img src={asset("./bux2.jpg")} class="h-full" />
+            <div class="bg-deepgreen px-24 py-12 flex items-center w-full justify-center h-full">
+              <div class="flex flex-col ">
+                <h1 class="font-bold text-white text-3xl text-center mb-6 font-sodo">
+                  It’s back—and oh, so lovely
+                </h1>
+                <p class="text-center font-semibold text-white text-lg">
+                  Fill your cup with Guatemala Casi Cielo®, a medium roast
+                  coffee with notes of Meyer lemon and cocoa nibs.
+                </p>
+
+                <button
+                  href="#"
+                  class="border-solid border-white border-1 px-3 py-1 rounded-2xl mt-6 mx-auto text-lg"
+                >
+                  <span class="font-semibold text-white">Learn more</span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
