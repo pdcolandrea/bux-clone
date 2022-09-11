@@ -1,11 +1,32 @@
-# fresh project
 
-### Usage
+# StarBux
 
-Start the project:
+A quick Starbucks clone built using the Fresh framework
 
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/pdcolandrea/bux-clone
 ```
-deno task start
+
+Go to the project directory
+
+```bash
+  cd my-project
 ```
 
-This will watch the project directory and restart as necessary.
+Start the server
+
+```bash
+  deno task start
+```
+
+
+## Acknowledgements
+
+ - [HeroIcons](https://heroicons.com/)
+ - [Fresh](https://github.com/denoland/fresh)
+ - [Starbucks](https://www.starbucks.com/)
