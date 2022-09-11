@@ -63,7 +63,7 @@ export default function Home() {
             </div>
             <img src={asset("./bux2.jpg")} class="h-full" />
 
-            <img src={asset("./bux2.jpg")} class="h-full" />
+            <img src={asset("./bux3.jpg")} class="h-full" />
             <div class="bg-deepgreen px-24 py-12 flex items-center w-full justify-center h-full">
               <div class="flex flex-col ">
                 <h1 class="font-bold text-white text-3xl text-center mb-6 font-sodo">
@@ -101,9 +101,9 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <img src={asset("./bux2.jpg")} class="h-full" />
+            <img src={asset("./bux4.jpg")} class="h-full" />
 
-            <img src={asset("./bux2.jpg")} class="h-full" />
+            <img src={asset("./bux5.jpg")} class="h-full" />
             <div class="bg-deepgreen px-24 py-12 flex items-center w-full justify-center h-full">
               <div class="flex flex-col ">
                 <h1 class="font-bold text-white text-3xl text-center mb-6 font-sodo">
