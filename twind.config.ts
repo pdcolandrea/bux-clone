@@ -16,8 +16,12 @@ export default {
     extend: {
       colors: {
         darkgreen: "#1e3932",
+        deepgreen: "#006241",
         sbgreen: "#d4e9e2",
         sbbrown: "#212020",
+        sbgreenalt: "#006241",
+        greyish: "#E9E9E9",
+        warmblack: "#3d3935",
       },
     },
   },
