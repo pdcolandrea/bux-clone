@@ -1,5 +1,5 @@
 import { asset } from "https://deno.land/x/fresh@1.1.0/runtime.ts";
-import { LocationPin } from "../components/Icons/HeroIcons.tsx";
+import Navbar from "../components/Navbar.tsx";
 import SeoHeader from "../components/Seo.tsx";
 import Counter from "../islands/Counter.tsx";
 
@@ -19,39 +19,7 @@ export default function Home() {
       </SeoHeader>
 
       <div class="w-full h-full">
-        <div class="flex flex-row justify-between items-center shadow-md mb-8 py-6 px-20">
-          <div class="flex flex-row items-center">
-            <img
-              src={asset("./bux_logo.png")}
-              href="#"
-              class="h-16 w-16 mr-6 cursor-pointer"
-            />
-            <ul class="pr-5 font-bold text-sbbrown hover:text-sbgreenalt cursor-pointer">
-              MENU
-            </ul>
-            <ul class="pr-5 font-bold text-sbbrown hover:text-sbgreenalt cursor-pointer">
-              REWARDS
-            </ul>
-            <ul class="pr-5 font-bold text-sbbrown hover:text-sbgreenalt cursor-pointer">
-              GIFT CARDS
-            </ul>
-          </div>
-
-          <div class="flex flex-row items-center">
-            <span className="flex font-semibold group hover:text-sbgreenalt cursor-pointer ">
-              <LocationPin />
-              Find a store
-            </span>
-
-            <button class="border-1 border-black px-3 py-1 rounded-2xl ml-6 font-semibold hover:bg-greyish">
-              Sign in
-            </button>
-
-            <button class="bg-black text-white px-3 py-1 rounded-2xl ml-4 font-semibold hover:bg-warmblack">
-              Join Now
-            </button>
-          </div>
-        </div>
+        <Navbar />
 
         <div class="w-full 2xl:w-11/12 mx-auto">
           <div class="grid md:grid-cols-2 grid-cols-1 gap-y-4 ">
@@ -75,7 +43,26 @@ export default function Home() {
               </div>
             </div>
 
-            <Counter start={3} />
+            <div class="bg-deepgreen px-24 py-12 flex items-center w-full justify-center h-full">
+              <div class="flex flex-col ">
+                <h1 class="font-bold text-white text-3xl text-center mb-6 font-sodo">
+                  Layers of baked apple yum
+                </h1>
+                <p class="text-center font-semibold text-white text-lg">
+                  Try the Apple Crisp Oatmilk Macchiato, now nondairy and with
+                  Starbucks® Blonde Espresso.
+                </p>
+
+                <button
+                  href="#"
+                  class="border-solid border-white border-1 px-3 py-1 rounded-2xl mt-6 mx-auto text-lg"
+                >
+                  <span class="font-semibold text-white">Learn more</span>
+                </button>
+              </div>
+            </div>
+            <img src={asset("./bux2.jpg")} class="h-full" />
+
             <Counter start={3} />
           </div>
         </div>
