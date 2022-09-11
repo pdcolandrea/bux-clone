@@ -22,6 +22,7 @@ export default {
         sbgreenalt: "#006241",
         greyish: "#E9E9E9",
         warmblack: "#3d3935",
+        sbpurp: "#B0B0B0",
       },
     },
   },

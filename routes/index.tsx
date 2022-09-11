@@ -16,6 +16,7 @@ export default function Home() {
           rel="stylesheet"
           type="text/css"
         />
+        <link rel="stylesheet" href="/app.css" />
       </SeoHeader>
 
       <div class="w-full h-full">
@@ -26,7 +27,7 @@ export default function Home() {
             <img src={asset("./bux.jpg")} class="h-full" />
             <div class="bg-sbgreen px-24 py-12 flex items-center w-full justify-center">
               <div class="flex flex-col ">
-                <h1 class="font-bold text-darkgreen text-3xl text-center mb-6 font-sodo">
+                <h1 class="font-bold text-darkgreen text-3xl text-center mb-6 font-body">
                   Fall at your fingertips
                 </h1>
                 <p class="text-center font-semibold text-darkgreen text-lg">
@@ -45,7 +46,7 @@ export default function Home() {
 
             <div class="bg-deepgreen px-24 py-12 flex items-center w-full justify-center h-full">
               <div class="flex flex-col ">
-                <h1 class="font-bold text-white text-3xl text-center mb-6 font-sodo">
+                <h1 class="font-bold text-white text-3xl text-center mb-6 font-body">
                   Layers of baked apple yum
                 </h1>
                 <p class="text-center font-semibold text-white text-lg">
@@ -66,7 +67,7 @@ export default function Home() {
             <img src={asset("./bux3.jpg")} class="h-full" />
             <div class="bg-deepgreen px-24 py-12 flex items-center w-full justify-center h-full">
               <div class="flex flex-col ">
-                <h1 class="font-bold text-white text-3xl text-center mb-6 font-sodo">
+                <h1 class="font-bold text-white text-3xl text-center mb-6 font-body">
                   Welcome home, pumpkin
                 </h1>
                 <p class="text-center font-semibold text-white text-lg">
@@ -85,7 +86,7 @@ export default function Home() {
 
             <div class="bg-deepgreen px-24 py-12 flex items-center w-full justify-center h-full">
               <div class="flex flex-col ">
-                <h1 class="font-bold text-white text-3xl text-center mb-6 font-sodo">
+                <h1 class="font-bold text-white text-3xl text-center mb-6 font-body">
                   Picks of the patch
                 </h1>
                 <p class="text-center font-semibold text-white text-lg">
@@ -106,7 +107,7 @@ export default function Home() {
             <img src={asset("./bux5.jpg")} class="h-full" />
             <div class="bg-deepgreen px-24 py-12 flex items-center w-full justify-center h-full">
               <div class="flex flex-col ">
-                <h1 class="font-bold text-white text-3xl text-center mb-6 font-sodo">
+                <h1 class="font-bold text-white text-3xl text-center mb-6 font-body">
                   It’s back—and oh, so lovely
                 </h1>
                 <p class="text-center font-semibold text-white text-lg">
@@ -123,6 +124,32 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <footer>
+            <div class="shadow-inner mt-8 flex p-6">
+              <div>
+                <h1 class="font-semibold text-xl">About Us</h1>
+                <ul class="text-sbpurp font-semibold">Our Company</ul>
+                <ul>Our Coffee</ul>
+              </div>
+              <div>
+                <h1>Careers</h1>
+                <ul>Culture and Values</ul>
+              </div>
+              <div>
+                <h1>Social Impact</h1>
+                <ul>Our Company</ul>
+              </div>
+              <div>
+                <h1>For Business Partners</h1>
+                <ul>Our Company</ul>
+              </div>
+              <div>
+                <h1>Order and Pickup</h1>
+                <ul>Our Company</ul>
+              </div>
+            </div>
+          </footer>
         </div>
       </div>
     </>
