@@ -32,7 +32,7 @@ export default function Home() {
         <Navbar />
 
         <div class="w-full 2xl:w-11/12 mx-auto">
-          <div class="grid md:grid-cols-2 grid-cols-1 gap-y-6 ">
+          <div class="grid md:grid-cols-2 sm:grid-cols-1 md:gap-y-6 sm:gap-y-0 ">
             <img src={asset("./bux.jpg")} class="h-full" />
             <div class="bg-sbgreen px-24 py-12 flex items-center w-full justify-center">
               <div class="flex flex-col ">
@@ -52,6 +52,8 @@ export default function Home() {
                 </button>
               </div>
             </div>
+
+            <div class="md:hidden h-6" />
 
             <div class="bg-deepgreen px-24 py-12 flex items-center w-full justify-center h-full">
               <div class="flex flex-col ">
@@ -73,6 +75,8 @@ export default function Home() {
             </div>
             <img src={asset("./bux2.jpg")} class="h-full" />
 
+            <div class="md:hidden h-6" />
+
             <img src={asset("./bux3.jpg")} class="h-full" />
             <div class="bg-deepgreen px-24 py-12 flex items-center w-full justify-center h-full">
               <div class="flex flex-col ">
@@ -93,6 +97,8 @@ export default function Home() {
               </div>
             </div>
 
+            <div class="md:hidden h-6" />
+
             <div class="bg-deepgreen px-24 py-12 flex items-center w-full justify-center h-full">
               <div class="flex flex-col ">
                 <h1 class="font-bold text-white text-3xl text-center mb-6 font-body">
@@ -112,6 +118,8 @@ export default function Home() {
               </div>
             </div>
             <img src={asset("./bux4.jpg")} class="h-full" />
+
+            <div class="md:hidden h-6" />
 
             <img src={asset("./bux5.jpg")} class="h-full" />
             <div class="bg-deepgreen px-24 py-12 flex items-center w-full justify-center h-full">
