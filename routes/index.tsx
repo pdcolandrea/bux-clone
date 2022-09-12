@@ -1,5 +1,7 @@
 import { asset } from "https://deno.land/x/fresh@1.1.0/runtime.ts";
 import HomeFooter from "../components/Footer/Footer.tsx";
+import GridRow from "../components/Grid/GridRow.tsx";
+import MobileSeperator from "../components/Grid/MobileSeperator.tsx";
 import Navbar from "../components/Navbar.tsx";
 import SeoHeader from "../components/Seo.tsx";
 
@@ -44,93 +46,48 @@ export default function Home() {
               </div>
             </div>
 
-            <div class="md:hidden h-6" />
+            <MobileSeperator />
 
-            <div class="bg-deepgreen px-24 py-12 flex items-center w-full justify-center h-full">
-              <div class="flex flex-col ">
-                <h1 class="font-bold text-white text-3xl text-center mb-6 font-body">
-                  Layers of baked apple yum
-                </h1>
-                <p class="text-center font-semibold text-white text-lg">
-                  Try the Apple Crisp Oatmilk Macchiato, now nondairy and with
-                  Starbucks® Blonde Espresso.
-                </p>
+            <GridRow
+              header="Layers of baked apple yum"
+              body="Try the Apple Crisp Oatmilk Macchiato, now nondairy and with
+                  Starbucks® Blonde Espresso."
+              imagePath="./bux2.jpg"
+              buttonText="Learn More"
+              feat="right"
+            />
 
-                <button
-                  href="#"
-                  class="border-solid border-white border-1 px-3 py-1 rounded-2xl mt-6 mx-auto text-lg"
-                >
-                  <span class="font-semibold text-white">Learn more</span>
-                </button>
-              </div>
-            </div>
-            <img src={asset("./bux2.jpg")} class="h-full" />
+            <MobileSeperator />
 
-            <div class="md:hidden h-6" />
+            <GridRow
+              header="Welcome home, pumpkin"
+              body="Fall favorites return with the blissful Pumpkin Spice Latte
+                  and smooth Pumpkin Cream Cold Brew."
+              buttonText="Learn more"
+              imagePath="./bux3.jpg"
+            />
 
-            <img src={asset("./bux3.jpg")} class="h-full" />
-            <div class="bg-deepgreen px-24 py-12 flex items-center w-full justify-center h-full">
-              <div class="flex flex-col ">
-                <h1 class="font-bold text-white text-3xl text-center mb-6 font-body">
-                  Welcome home, pumpkin
-                </h1>
-                <p class="text-center font-semibold text-white text-lg">
-                  Fall favorites return with the blissful Pumpkin Spice Latte
-                  and smooth Pumpkin Cream Cold Brew.
-                </p>
+            <MobileSeperator />
 
-                <button
-                  href="#"
-                  class="border-solid border-white border-1 px-3 py-1 rounded-2xl mt-6 mx-auto text-lg"
-                >
-                  <span class="font-semibold text-white">Learn more</span>
-                </button>
-              </div>
-            </div>
+            <GridRow
+              header="Picks of the patch"
+              body="Choose a comforting classic: Pumpkin Cream Cheese Muffin,
+                  Pumpkin & Pepita Loaf or Pumpkin Scone."
+              imagePath="./bux4.jpg"
+              buttonText="Learn more"
+              feat="right"
+            />
 
-            <div class="md:hidden h-6" />
+            <MobileSeperator />
 
-            <div class="bg-deepgreen px-24 py-12 flex items-center w-full justify-center h-full">
-              <div class="flex flex-col ">
-                <h1 class="font-bold text-white text-3xl text-center mb-6 font-body">
-                  Picks of the patch
-                </h1>
-                <p class="text-center font-semibold text-white text-lg">
-                  Choose a comforting classic: Pumpkin Cream Cheese Muffin,
-                  Pumpkin & Pepita Loaf or Pumpkin Scone.
-                </p>
-
-                <button
-                  href="#"
-                  class="border-solid border-white border-1 px-3 py-1 rounded-2xl mt-6 mx-auto text-lg"
-                >
-                  <span class="font-semibold text-white">Learn more</span>
-                </button>
-              </div>
-            </div>
-            <img src={asset("./bux4.jpg")} class="h-full" />
-
-            <div class="md:hidden h-6" />
-
-            <img src={asset("./bux5.jpg")} class="h-full" />
-            <div class="bg-deepgreen px-24 py-12 flex items-center w-full justify-center h-full">
-              <div class="flex flex-col ">
-                <h1 class="font-bold text-white text-3xl text-center mb-6 font-body">
-                  It’s back—and oh, so lovely
-                </h1>
-                <p class="text-center font-semibold text-white text-lg">
-                  Fill your cup with Guatemala Casi Cielo®, a medium roast
-                  coffee with notes of Meyer lemon and cocoa nibs.
-                </p>
-
-                <button
-                  href="#"
-                  class="border-solid border-white border-1 px-3 py-1 rounded-2xl mt-6 mx-auto text-lg"
-                >
-                  <span class="font-semibold text-white">Learn more</span>
-                </button>
-              </div>
-            </div>
+            <GridRow
+              header="It’s back—and oh, so lovely"
+              body="Fill your cup with Guatemala Casi Cielo®, a medium roast
+                  coffee with notes of Meyer lemon and cocoa nibs."
+              imagePath="./bux5.jpg"
+              buttonText="Learn more"
+              headerStyle="text-xl"
+            />
           </div>
 
           <HomeFooter />
