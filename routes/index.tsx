@@ -1,8 +1,9 @@
 import { asset } from "https://deno.land/x/fresh@1.1.0/runtime.ts";
 import HomeFooter from "../components/Footer/Footer.tsx";
+import GridContainer from "../components/Grid/GridContainer.tsx";
 import GridRow from "../components/Grid/GridRow.tsx";
 import MobileSeperator from "../components/Grid/MobileSeperator.tsx";
-import Navbar from "../components/Navbar.tsx";
+import Navbar from "../components/Navbar/Navbar.tsx";
 import SeoHeader from "../components/Seo.tsx";
 
 export default function Home() {
@@ -24,8 +25,8 @@ export default function Home() {
       <div class="w-full h-full">
         <Navbar />
 
-        <div class="w-full 2xl:w-11/12 mx-auto">
-          <div class="grid md:grid-cols-2 sm:grid-cols-1 md:gap-y-6 sm:gap-y-0 ">
+        <div class="w-full 2xl:w-5/6 mx-auto">
+          <GridContainer>
             <img src={asset("./bux.jpg")} class="h-full" />
             <div class="bg-sbgreen px-24 py-12 flex items-center w-full justify-center">
               <div class="flex flex-col ">
@@ -47,7 +48,6 @@ export default function Home() {
             </div>
 
             <MobileSeperator />
-
             <GridRow
               header="Layers of baked apple yum"
               body="Try the Apple Crisp Oatmilk Macchiato, now nondairy and with
@@ -58,7 +58,6 @@ export default function Home() {
             />
 
             <MobileSeperator />
-
             <GridRow
               header="Welcome home, pumpkin"
               body="Fall favorites return with the blissful Pumpkin Spice Latte
@@ -68,7 +67,6 @@ export default function Home() {
             />
 
             <MobileSeperator />
-
             <GridRow
               header="Picks of the patch"
               body="Choose a comforting classic: Pumpkin Cream Cheese Muffin,
@@ -79,7 +77,6 @@ export default function Home() {
             />
 
             <MobileSeperator />
-
             <GridRow
               header="It’s back—and oh, so lovely"
               body="Fill your cup with Guatemala Casi Cielo®, a medium roast
@@ -88,7 +85,7 @@ export default function Home() {
               buttonText="Learn more"
               headerStyle="text-xl"
             />
-          </div>
+          </GridContainer>
 
           <HomeFooter />
         </div>

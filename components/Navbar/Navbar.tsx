@@ -1,25 +1,17 @@
 import { asset } from "https://deno.land/x/fresh@1.1.0/runtime.ts";
-import { BarsIcon, LocationPin } from "./Icons/HeroIcons.tsx";
+import { LocationPin, BarsIcon } from "../Icons/HeroIcons.tsx";
+import { StarbucksLogo } from "../Icons/SbIcons.tsx";
+import NavbarItem from "./NavbarItem.tsx";
 
 export default function NavBar() {
   return (
     <>
       <div class="flex flex-row justify-between items-center shadow-md mb-8 py-6 px-20 md:flex sm:hidden">
         <div class="flex flex-row items-center">
-          <img
-            src={asset("./bux_logo.png")}
-            href="#"
-            class="h-16 w-16 mr-6 cursor-pointer"
-          />
-          <ul class="pr-5 font-bold text-sbbrown hover:text-sbgreenalt cursor-pointer">
-            MENU
-          </ul>
-          <ul class="pr-5 font-bold text-sbbrown hover:text-sbgreenalt cursor-pointer">
-            REWARDS
-          </ul>
-          <ul class="pr-5 font-bold text-sbbrown hover:text-sbgreenalt cursor-pointer">
-            GIFT CARDS
-          </ul>
+          <StarbucksLogo />
+          <NavbarItem title="MENU" />
+          <NavbarItem title="REWARDS" />
+          <NavbarItem title="GIFT CARDS" />
         </div>
 
         <div class="flex flex-row items-center">
@@ -39,12 +31,7 @@ export default function NavBar() {
       </div>
 
       <div class="flex flex-row justify-between items-center shadow-md mb-8 py-6 px-10 md:hidden sm:flex">
-        <img
-          src={asset("./bux_logo.png")}
-          href="#"
-          class="h-16 w-16 mr-6 cursor-pointer"
-        />
-
+        <StarbucksLogo />
         <BarsIcon />
       </div>
     </>

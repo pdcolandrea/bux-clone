@@ -109,13 +109,24 @@ export default function HomeFooter() {
           </a>
         </div>
 
-        <p class="mt-6 text-sbpurp font-body">
-          © 2022 Starbucks Coffee Company. All rights reserved.
-        </p>
+        <div class="flex flex-row justify-between">
+          <a href="https://starbucks.com" class="mt-6 text-sbpurp font-body">
+            © 2022 Starbucks Coffee Company. All rights reserved.
+          </a>
+
+          <a href="https://fresh.deno.dev">
+            <img
+              width="197"
+              height="37"
+              src="https://fresh.deno.dev/fresh-badge.svg"
+              alt="Made with Fresh"
+            />
+          </a>
+        </div>
       </div>
 
       <div class="shadow-inner mt-8 flex p-6 flex-col sm:visible md:hidden">
-        <h1>HELLO MOBILE</h1>
+        <h1>TODO MOBILE</h1>
       </div>
     </footer>
   );
